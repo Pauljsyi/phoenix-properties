@@ -53,7 +53,7 @@ const Login = ({ changePage }) => {
               console.log("auth data: ", data);
               const metadata = {
                 id: user._id,
-                name: capitalizeFirstLetter(user.firstName),
+                name: user.firstName,
               };
               authUser(metadata);
               resetForm();
